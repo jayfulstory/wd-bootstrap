@@ -9,7 +9,7 @@ const text =
 function initText(ele, textArr) {
   textArr.push(...textArr);
   textArr.forEach(text => {
-    ele.innerText += `${text}\u00a0`;
+    ele.innerText += `${text}\u00a0\u00a0\u00a0\u00a0`;
   });
 }
 initText(content, text);
