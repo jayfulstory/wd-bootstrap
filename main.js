@@ -1,7 +1,6 @@
 // gsap.registerPlugin(ScrollTrigger);
 const content = document.querySelector('.section-content');
 let count = 0;
-let width = content.offsetWidth;
 const text =
   'KAGAMIROCK KAGAMIROCK KAGAMIROCK KAGAMIROCK KAGAMIROCK KAGAMIROCK '.split(
     ' '
@@ -17,7 +16,7 @@ initText(content, text);
 window.addEventListener('scroll', () => (count += 15));
 
 function textLoof(count, ele, direction) {
-  if (count > ele.offsetWidth / 2) {
+  if (count > ele.scrollWidth / 2) {
     count = 0;
   }
   gsap.set(ele, {
