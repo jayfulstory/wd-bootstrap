@@ -1,7 +1,49 @@
 body {
   font-family: 'Murecho', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-/* nav a img {
-  width: 160px;
-} */
+.main-img {
+  background-image: url('./images/main.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.main-text {
+  /* background-color: white; */
+  color: white;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+i {
+  font-size: 28px;
+}
+.fa-instagram {
+  color: #e1306c;
+}
+.fa-facebook {
+  color: #1877f2;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .footer-right {
+    padding-top: 16px;
+  }
+}
