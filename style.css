@@ -1,7 +1,6 @@
 body {
   font-family: 'Murecho', sans-serif;
   width: 100vw;
-  overflow-x: hidden;
 }
 
 img {
@@ -15,8 +14,15 @@ img {
   background-repeat: no-repeat;
 }
 .main-text {
-  /* background-color: white; */
   color: white;
+}
+
+.section-text {
+  overflow-x: hidden;
+}
+
+.section-content {
+  position: relative;
 }
 
 .footer {
